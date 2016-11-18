@@ -1,0 +1,13 @@
+version: '2'
+services:
+  zookeeper:
+    image: zookeeper:3.4.9
+    restart: always
+    ports:
+      - ${PORT_2181}
+      - ${PORT_2888}
+      - ${PORT_3888}
+    volumes:
+      - ./conf/zoo.cfg:/conf/zoo.cfg
+      - ./data:/data
+      - ./datalog:/datalog
