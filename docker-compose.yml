@@ -9,5 +9,5 @@ services:
       - ${PORT_3888}
     volumes:
       - ./conf/zoo.cfg:/conf/zoo.cfg
-      - ./data:/data
-      - ./datalog:/datalog
+      - ./data/data:/data/data
+      - ./data/log:/data/log
