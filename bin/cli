@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo 'usage: zkCli.sh -server <IP>:2181'
+docker-compose run --rm zookeeper /bin/bash
